@@ -40,12 +40,18 @@ nav img {
   color: #eaeced;
 }
 
-ul li {
-  display: inline-block;
+h1,
+h2 {
+  text-align: center;
+}
+
+hr {
+  max-width: 130px;
 }
 
 footer {
   background-color: #8dafb5;
+  height: 200px;
 }
 
 /*A FUTURE IN SPACE*/
