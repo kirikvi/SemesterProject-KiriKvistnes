@@ -1,0 +1,43 @@
+/*Colours:
+Dark teal: #8dafb5
+Almost black: #010102
+Light grey: #eaeced 
+Orange: #f5c15b
+Deep blue: #071540
+Light teal: #d7e3e5
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navigation {
+  background-image: url(../images/top-index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+}
+
+.nav_background-colour {
+  background-color: #010102;
+  opacity: 93%;
+  color: #eaeced;
+}
+
+ul li {
+  display: inline-block;
+}
+
+footer {
+  background-color: #8dafb5;
+}
