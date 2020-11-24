@@ -28,7 +28,7 @@ nav img {
 }
 
 .navigation {
-  background-image: url(../images/top-index.jpg);
+  background-image: url("../images/top-index.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -49,7 +49,3 @@ footer {
 }
 
 /*A FUTURE IN SPACE*/
-
-div {
-  height: 150px;
-}
