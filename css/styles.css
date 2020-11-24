@@ -41,8 +41,31 @@ nav img {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   text-align: center;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-style: normal;
+  color: #010102;
+}
+h1 {
+  font-family: "sneakers-pro", sans-serif;
+  font-weight: 500;
+}
+h2,
+h3 {
+  font-family: "bc-sklonar", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: omnes-pro, sans-serif;
+  font-weight: 100;
 }
 
 hr {
@@ -53,5 +76,7 @@ footer {
   background-color: #8dafb5;
   height: 200px;
 }
+
+/*BACKGROUNDS*/
 
 /*A FUTURE IN SPACE*/
