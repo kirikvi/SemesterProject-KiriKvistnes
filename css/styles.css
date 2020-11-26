@@ -32,11 +32,17 @@ nav img {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
+  min-height: 400px;
+  background-position: 50% 70%;
+  z-index: -1;
+}
+
+.navigation img {
+  z-index: 1;
 }
 
 .nav_background-colour {
   background-color: #010102;
-  opacity: 93%;
   color: #eaeced;
 }
 
@@ -58,14 +64,25 @@ h1 {
   font-weight: 500;
 }
 h2,
-h3 {
+h3,
+a {
   font-family: "bc-sklonar", sans-serif;
   font-weight: 400;
 }
 
-p {
+a:hover {
+  font-weight: 700;
+}
+
+h4,
+p,
+.opening-hours li {
   font-family: omnes-pro, sans-serif;
   font-weight: 100;
+}
+
+h4 {
+  font-weight: 800;
 }
 
 hr {
@@ -78,5 +95,64 @@ footer {
 }
 
 /*BACKGROUNDS*/
+
+/*INDEX*/
+.index-heading {
+  background-color: #010102;
+  text-align: center;
+  color: #eaeced;
+  height: 200px;
+}
+
+.index-heading h1,
+.index-heading p,
+.index-heading a,
+.exhibition-item p,
+.exhibition-item h3,
+.special-item p,
+.special-item h3,
+.special-container h2 {
+  color: #eaeced;
+}
+
+.exhibition-container {
+  background-color: #d7e3e5;
+  display: flex;
+  flex-direction: column;
+}
+
+.special-container {
+  background-color: hsl(0, 1%, 27%);
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibition-item,
+.special-item {
+  background-color: #141414;
+  flex: 1 1 auto;
+  width: 250px;
+  height: 400px;
+  margin: 10px auto 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.exhibition-item img {
+  max-width: 230px;
+  max-height: 260px;
+  overflow: hidden;
+}
+
+.visit-container {
+  background-color: #d7e3e5;
+  display: flex;
+  flex-direction: column;
+}
+
+.visit-item {
+  max-width: 250px;
+  margin: auto;
+}
 
 /*A FUTURE IN SPACE*/
