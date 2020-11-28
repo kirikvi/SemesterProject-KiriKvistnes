@@ -127,7 +127,6 @@ hr {
 
 footer {
   background-color: #8dafb5;
-  height: 200px;
   margin-left: 100px;
 }
 
@@ -141,8 +140,23 @@ footer {
   margin: auto;
 }
 
-.footer-hr {
-  width: 250px;
+.footer-item p {
+  font-size: 0.8rem;
+  max-width: 150px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.footer-item i {
+  font-size: 2rem;
+  margin: 20px 10px 30px;
+  color: #010102;
+}
+
+.footer-item img {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto 0;
 }
 
 /*BACKGROUNDS*/
@@ -176,6 +190,11 @@ footer {
   position: relative;
   top: 50px;
   line-height: 40px;
+}
+
+#ticket-text {
+  color: #8dafb5;
+  font-weight: 800;
 }
 
 .index-text p {
@@ -248,6 +267,11 @@ a.h3 {
   max-width: 250px;
 }
 
+.visit-item a {
+  color: #010102;
+  text-align: center;
+  margin: auto;
+}
 .visit-item {
   margin: auto;
 }
@@ -263,4 +287,24 @@ iframe {
   margin: auto;
   width: 150px;
   height: 150px;
+}
+
+/*EXPLORE*/
+.for_kids p,
+.for_teachers p,
+.for_researchers p {
+  max-width: 250px;
+  margin: auto;
+}
+
+.for_kids {
+  background-color: #d7e3e5;
+}
+
+.for_teachers {
+  background-color: #8dafb5;
+}
+
+.for_researchers {
+  background-color: #eaeced;
 }
