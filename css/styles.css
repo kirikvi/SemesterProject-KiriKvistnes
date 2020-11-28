@@ -109,7 +109,6 @@ a:hover {
 
 h4,
 p,
-.opening-hours li,
 .exhibition-item a,
 .special-item a {
   font-family: "omnes-pro", sans-serif;
@@ -193,7 +192,7 @@ footer {
 
 #ticket-text,
 .ticket-text {
-  color: #8dafb5;
+  color: #f5c15b;
   font-weight: 800;
   background-color: #010102;
   overflow: hidden;
@@ -240,10 +239,25 @@ a.h3 {
 /*A FUTURE IN SPACE*/
 
 /*VISIT*/
-iframe {
+.visit-item #map {
   margin: auto;
-  width: 150px;
-  height: 150px;
+  width: 240px;
+  height: 240px;
+}
+
+.visit-item p {
+  text-align: center;
+  max-width: 240px;
+  margin: 0 0 40px;
+}
+
+.opening-hours p {
+  line-height: 20px;
+  margin: 0;
+}
+
+.visit-item h2 {
+  margin: 30px auto 10px;
 }
 
 /*EXPLORE*/
@@ -270,13 +284,20 @@ iframe {
 .exhibition-container h1,
 .exhibition-container p,
 .exhibition-item a,
-.special-item a {
+.special-item a,
+.special-container h1 {
   color: #eaeced;
   text-decoration: none;
 }
 
-.exhibition-container h1 {
+.exhibition-container h1,
+.special-container h1 {
   margin: 70px 0 0 0;
+}
+
+.special-container h1 {
+  font-size: 2rem;
+  text-align: center;
 }
 
 .exhibition-container p {
