@@ -36,9 +36,8 @@ nav img {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
-  min-height: 350px;
-  background-position: 50% 70%;
-  z-index: -1;
+  min-height: 260px;
+  background-position: 50%;
 }
 
 .nav {
@@ -170,6 +169,8 @@ footer {
   background-color: #010102;
   text-align: center;
   color: #eaeced;
+  overflow: hidden;
+  height: 250px;
 }
 
 .index-pic h1,
@@ -192,16 +193,18 @@ footer {
   line-height: 40px;
 }
 
-#ticket-text {
+#ticket-text,
+.ticket-text {
   color: #8dafb5;
   font-weight: 800;
+  background-color: #010102;
+  overflow: hidden;
+  text-align: center;
 }
 
 .index-text p {
   margin: 0 auto 15px;
   max-width: 250px;
-  position: relative;
-  bottom: 50px;
   font-size: 0.8rem;
 }
 
