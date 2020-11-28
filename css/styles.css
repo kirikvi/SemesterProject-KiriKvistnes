@@ -121,7 +121,7 @@ h4 {
 }
 
 hr {
-  max-width: 130px;
+  width: 130px;
 }
 
 footer {
@@ -157,8 +157,6 @@ footer {
   height: 100px;
   margin: 30px auto 0;
 }
-
-/*BACKGROUNDS*/
 
 /*INDEX*/
 .content-container {
@@ -208,53 +206,9 @@ footer {
   font-size: 0.8rem;
 }
 
-.exhibition-container,
-.special-container {
-  background-color: #010102;
-  display: flex;
-  flex-direction: column;
-}
-
-.exhibition-item,
-.special-item {
-  background-color: #131313;
-  flex: 1 1 auto;
-  width: 250px;
-  height: 400px;
-  margin: 10px auto 20px;
-  text-align: center;
-  padding: 10px;
-  box-shadow: -2px 6px 6px rgba(76, 112, 126, 0.2),
-    2px 6px 6px rgba(255, 255, 255, 0.23);
-}
-
-.exhibition-item {
-  border: 3px solid #8dafb5;
-}
-
-.special-item {
-  border: 3px solid #f5c15b;
-}
-
-.special-item:active {
-  background-color: #f5c15b;
-}
-
-.exhibition-item a,
-.special-item a {
-  color: #eaeced;
-  text-decoration: none;
-}
-
 a.h3 {
   font-family: "bc-sklonar", sans-serif;
   font-weight: 400;
-}
-
-.exhibition-item img {
-  max-width: 230px;
-  max-height: 260px;
-  overflow: hidden;
 }
 
 .visit-container {
@@ -310,4 +264,96 @@ iframe {
 
 .for_researchers {
   background-color: #eaeced;
+}
+
+/*EXHIBITIONS and EVENTS*/
+.exhibition-container h1,
+.exhibition-container p,
+.exhibition-item a,
+.special-item a {
+  color: #eaeced;
+  text-decoration: none;
+}
+
+.exhibition-container h1 {
+  margin: 70px 0 0 0;
+}
+
+.exhibition-container p {
+  font-size: 0.8rem;
+  max-width: 240px;
+  margin: 10px auto 40px;
+}
+
+.exhibition-item p {
+  font-size: 1rem;
+}
+
+.exhibition-container,
+.special-container {
+  background-color: #010102;
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibition-item,
+.special-item {
+  background-color: #131313;
+  flex: 1 1 auto;
+  width: 250px;
+  height: 400px;
+  margin: 10px auto 20px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: -2px 6px 6px rgba(76, 112, 126, 0.2),
+    2px 6px 6px rgba(255, 255, 255, 0.23);
+}
+
+.exhibition-item {
+  border: 3px solid #8dafb5;
+}
+
+.special-item {
+  border: 3px solid #f5c15b;
+}
+
+.special-item:active {
+  background-color: #f5c15b;
+}
+
+.exhibition-item img {
+  max-width: 230px;
+  max-height: 260px;
+  overflow: hidden;
+}
+
+/*GET INVOLVED*/
+.get_involved {
+  background-color: #8dafb5;
+}
+
+.get_involved h1 {
+  margin: 70px auto 10px;
+}
+
+.volunteer {
+  background-color: #eaeced;
+}
+
+.internships {
+  background-color: #d7e3e5;
+}
+
+.internships p,
+.volunteer p,
+.get_involved p {
+  max-width: 240px;
+  margin: auto auto 40px;
+  font-size: 0.8rem;
+}
+
+.internships,
+.volunteer,
+.get_involved {
+  overflow: hidden;
 }
