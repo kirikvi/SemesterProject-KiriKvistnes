@@ -27,14 +27,44 @@ nav img {
   margin-top: 20px;
 }
 
-.navigation {
+.index-pic {
   background-image: url("../images/top-index.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
-  min-height: 400px;
+  min-height: 350px;
   background-position: 50% 70%;
   z-index: -1;
+}
+
+.nav {
+  background-color: #010102;
+  width: 100px;
+  min-height: 100%;
+  margin: 0;
+  position: fixed;
+}
+
+.nav a {
+  color: #8dafb5;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+#logo {
+  width: 90px;
+  height: 90px;
+  margin-top: 40px;
+}
+
+a.menu-link {
+  font-size: 0.5rem;
+  margin: 0 auto;
+  max-width: 50px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .navigation img {
@@ -94,19 +124,37 @@ hr {
 footer {
   background-color: #8dafb5;
   height: 200px;
+  margin-left: 100px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-item {
+  flex: 1 1 auto;
+  margin: auto;
+}
+
+.footer-hr {
+  width: 250px;
 }
 
 /*BACKGROUNDS*/
 
 /*INDEX*/
+.content-container {
+  margin-left: 100px;
+}
+
 .index-text {
   background-color: #010102;
   text-align: center;
   color: #eaeced;
-  height: 200px;
 }
 
-.navigation h1,
+.index-pic h1,
 .index-text p,
 .index-text a,
 .exhibition-item p,
@@ -118,17 +166,20 @@ footer {
   color: #eaeced;
 }
 
-.navigation h1 {
-  font-size: 3.5rem;
+.index-pic h1 {
+  font-size: 3rem;
   margin: 0 auto 5px;
   position: relative;
-  top: 75px;
+  top: 50px;
   line-height: 40px;
 }
 
 .index-text p {
   margin: 0 auto 15px;
   max-width: 250px;
+  position: relative;
+  bottom: 50px;
+  font-size: 0.8rem;
 }
 
 .exhibition-container,
@@ -186,9 +237,22 @@ a.h3 {
   flex-direction: column;
 }
 
-.visit-item {
+.visit-item p,
+.visit-item h4,
+.visit-item a,
+.visit-item li {
   max-width: 250px;
+}
+
+.visit-item {
   margin: auto;
 }
 
 /*A FUTURE IN SPACE*/
+
+/*VISIT*/
+iframe {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+}
