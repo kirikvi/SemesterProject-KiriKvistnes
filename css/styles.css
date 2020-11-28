@@ -21,6 +21,10 @@ img {
   max-width: 100%;
 }
 
+body {
+  margin: 0;
+}
+
 nav img {
   max-height: 100px;
   max-width: 100px;
@@ -145,7 +149,7 @@ footer {
 
 /*INDEX*/
 .content-container {
-  margin-left: 100px;
+  margin: 0 0 0 100px;
 }
 
 .index-text {
@@ -246,6 +250,10 @@ a.h3 {
 
 .visit-item {
   margin: auto;
+}
+
+.visit-item img {
+  margin: 0 auto;
 }
 
 /*A FUTURE IN SPACE*/
