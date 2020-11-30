@@ -264,12 +264,21 @@ a.h3 {
 .for_kids p,
 .for_teachers p,
 .for_researchers p {
-  max-width: 250px;
-  margin: auto;
+  max-width: 240px;
+  margin: 10px auto;
+}
+
+.for_kids h1 {
+  margin: -4px auto 0px;
+  font-size: 2.5rem;
 }
 
 .for_kids {
   background-color: #d7e3e5;
+}
+
+.send_info {
+  margin: 20px auto;
 }
 
 .for_teachers {
