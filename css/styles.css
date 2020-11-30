@@ -349,6 +349,10 @@ a.h3 {
   border: 3px solid #8dafb5;
 }
 
+.exhibition-item:active {
+  background-color: #8dafb5;
+}
+
 .special-item {
   border: 3px solid #f5c15b;
 }
@@ -363,13 +367,61 @@ a.h3 {
   overflow: hidden;
 }
 
+/*NIGHT IN THE MUSEUM*/
+.night_back {
+  background-color: #eaeced;
+  padding-bottom: 40px;
+}
+
+.night_back p,
+.night_back h1 {
+  max-width: 240px;
+  margin: auto;
+}
+
+.night-form {
+  max-width: 250px;
+  background-color: #f5c15b;
+  padding: 20px;
+  margin: 25px auto 0;
+}
+
+.block-form {
+  display: block;
+  margin: 5px auto;
+}
+
+.night-form label,
+.night-form input {
+  margin: auto;
+}
+
+.night-list li {
+  list-style-type: circle;
+  margin: auto;
+}
+
+.send {
+  text-align: center;
+  background-color: #eaeced;
+  width: 70px;
+  font-weight: 500;
+}
+
+.send:hover {
+  background-color: #010102;
+  color: #f5c15b;
+}
+
+#email,
+#phone,
+#name {
+  width: 200px;
+}
+
 /*GET INVOLVED*/
 .get_involved {
   background-color: #8dafb5;
-}
-
-.get_involved h1 {
-  margin: 70px auto 10px;
 }
 
 .volunteer {

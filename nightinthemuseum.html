@@ -25,37 +25,50 @@
     </div>
   </nav> 
   <main class="content-container">
-        <div>
+        <div class="night_back">
+            <img src="images/night-pic.jpg" alt="a skeleton of a wooly mammoth in a museum">
             <h1>Night in the Museum</h1>
+            <hr>
             <p>Get your family or friends together for an exciting night in the museum as you sleep over beside dinosaurs and science displays.</p>
             <p>Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
+            
             <form class="night-form">
                 <h2>Sign up for a Night in the Museum</h2>
-                <ul>
+                <ul class="night-list">
                     <li>For kids from the age of 6</li> 
                     <li>Bring your own sleeping bag</li>
                     <li>Limit of 30 people. First come, first served.</li>
                 </ul>
-                <label for="name">Name</label>
-                <input type="text" id="name">
-                <label for="phone">Phone</label>
-                <input type="text" id="phone">
-                <label for="email">E-mail</label>
-                <input type="text" id="email">
-
+                <label class="block-form" for="name">Name</label>
+                <input class="block-form" type="text" id="name">
+                <label class="block-form" for="phone">Phone</label>
+                <input class="block-form" type="text" id="phone">
+                <label class="block-form" for="email">E-mail</label>
+                <input class="block-form" type="text" id="email">
+                
+                <div class="block-form">
                 <input type="radio" id="04/01-05/01">
                 <label for="04/01-05/01">04/01-05/01</label>
+                </div>
+                <div class="block-form">
                 <input type="radio" id="20/01-21/01">
                 <label for="20/01-21/01">20/01-21/01</label>
+                </div>
+                <div class="block-form">
                 <input type="radio" id="07/02-08/02">
                 <label for="07/02-08/02">07/02-08/02</label>
+                </div>
+                <div class="block-form">
                 <input type="radio" id="26/02-27/02">
                 <label for="26/02-27/02">26/02-27/02</label>
-
+                </div>
+                
+                <div class="block-form">
                 <input type="radio" id="over18">
                 <label for="over18">I am 18 years or older</label>
+                </div>
 
-                <input type="submit" value="send">
+                <p class="send">Send</p>
             </form>
         </div>
     </main> 
