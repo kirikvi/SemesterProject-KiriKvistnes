@@ -265,17 +265,29 @@ a.h3 {
 .for_teachers p,
 .for_researchers p {
   max-width: 240px;
-  margin: 10px auto;
+  margin: 5px auto;
+  overflow: visible;
 }
 
 .for_kids h1 {
-  margin: -4px auto 0px;
+  margin: auto;
   font-size: 2.5rem;
 }
 
 .for_kids {
   background-color: #d7e3e5;
+  min-height: 400px;
 }
+
+/*.for_kids,
+.for_researchers,
+.for_teachers {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}*/
 
 .send_info {
   margin: 20px auto;
