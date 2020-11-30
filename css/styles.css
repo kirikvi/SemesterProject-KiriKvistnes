@@ -236,8 +236,6 @@ a.h3 {
   margin: 0 auto;
 }
 
-/*A FUTURE IN SPACE*/
-
 /*VISIT*/
 .visit-item #map {
   margin: auto;
@@ -366,6 +364,48 @@ a.h3 {
   max-height: 260px;
   overflow: hidden;
 }
+
+/*COSMOLOGY*/
+.cosmology-content p,
+.cosmology-content h1 {
+  color: #d7e3e5;
+  max-width: 240px;
+  margin: auto;
+}
+
+.cosmology-content {
+  background-color: #010102;
+  padding: 20px;
+}
+
+/*EVOLUTION*/
+#evolution {
+  background-color: #f5c15b;
+  padding: 20px 0;
+}
+
+#evolution p {
+  max-width: 240px;
+  margin: auto;
+}
+
+#dino {
+  position: relative;
+  z-index: 2;
+}
+
+#evolution h1 {
+  font-size: 3.5rem;
+  font-family: "salvation", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+}
+
+.move_up {
+  position: relative;
+  bottom: 100px;
+}
+
+/*A FUTURE IN SPACE*/
 
 /*NIGHT IN THE MUSEUM*/
 .night_back {
