@@ -11,14 +11,14 @@ html {
   box-sizing: border-box;
 }
 
+.img {
+  min-width: 100%;
+}
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
-}
-
-img {
-  max-width: 100%;
 }
 
 body {
@@ -278,6 +278,13 @@ a.h3 {
   padding-bottom: 25px;
 }
 
+.for_kids,
+.for_researchers,
+.for_teachers {
+  display: flex;
+  flex-direction: column;
+}
+
 .send_info {
   margin: auto;
   padding: 40px;
@@ -291,6 +298,26 @@ a.h3 {
 .for_researchers {
   background-color: #eaeced;
   padding-bottom: 40px;
+}
+
+#explore_img {
+  max-height: 200px;
+}
+
+.forkids_text,
+.forkids_img {
+  flex: 1 1 auto;
+}
+
+.forkids_img img {
+  max-width: 240px;
+  margin: auto;
+}
+
+.forkids_text p,
+.forkids_text h2 {
+  max-width: 240px;
+  margin: auto;
 }
 
 /*EXHIBITIONS and EVENTS*/
@@ -359,10 +386,17 @@ a.h3 {
   background-color: #f5c15b;
 }
 
-.exhibition-item img {
-  min-width: 230px;
+.exhibition-item img,
+.special-item img,
+.left img {
+  max-width: 220px;
   max-height: 260px;
   overflow: hidden;
+  margin: auto;
+}
+
+#afuture {
+  margin-bottom: 50px;
 }
 
 /*COSMOLOGY*/
@@ -505,7 +539,12 @@ a.h3 {
     padding: 10px;
   }
 
+  .exhibition-item img,
+  .special-item img,
   .left img {
+    max-width: 400px;
+    overflow: hidden;
+    margin: auto;
     min-height: 360px;
     padding: 10px;
   }
@@ -516,6 +555,10 @@ a.h3 {
 
   .exhibition-item:hover {
     background-color: #8dafb5;
+  }
+
+  .special-item:hover {
+    background-color: #f5c15b;
   }
 
   .exhibition-container h1,
@@ -530,6 +573,37 @@ a.h3 {
   .exhibition-container h1 {
     font-size: 4rem;
     text-align: center;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  footer,
+  .content-container {
+    margin-left: 110px;
+  }
+
+  .nav {
+    width: 110px;
+  }
+
+  /*EXPLORE */
+  .for_kids {
+    flex-flow: row-reverse;
+  }
+
+  .for_researchers,
+  .for_teachers {
+    flex-direction: row;
+  }
+
+  .forkids_img img {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .forkids_text p,
+  .forkids_text h2 {
+    max-width: 400px;
     margin: auto;
   }
 } /*MEDIA QUERY CLOSING*/
