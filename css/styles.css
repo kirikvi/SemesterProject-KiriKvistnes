@@ -491,10 +491,27 @@ a.h3 {
   background-color: #d7e3e5;
 }
 
+#donate {
+  background-color: #d7e3e5;
+  border: 1px solid #010102;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.get_involved div,
+.volunteer div,
+.internships div {
+  display: flex;
+  flex-direction: column;
+}
+
 .internships p,
 .volunteer p,
 .get_involved p {
-  padding: 0 30px 20px;
   font-size: 0.8rem;
 }
 
@@ -514,7 +531,7 @@ a.h3 {
   }
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1024px) {
   .exhibition-item,
   .special-item {
     display: flex;
@@ -543,11 +560,6 @@ a.h3 {
 
   .special-item:hover {
     background-color: #f5c15b;
-  }
-
-  .exhibition-container h1,
-  .exhibition-container p {
-    max-width: 800px;
   }
 
   .exhibition-container p {
@@ -585,5 +597,22 @@ a.h3 {
 
   .for_researchers {
     flex-direction: row;
+  }
+
+  /*GET INVOLVED*/
+  .internships {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .get_involved div img,
+  .volunteer div,
+  .internships div img {
+    max-width: 100%;
+  }
+
+  #donate:hover {
+    background-color: #f5c15b;
+    font-weight: 800;
   }
 } /*MEDIA QUERY CLOSING*/
