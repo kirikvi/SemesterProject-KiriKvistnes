@@ -91,6 +91,7 @@ h3,
 p {
   font-style: normal;
   color: #010102;
+  padding: 0 30px;
 }
 h1 {
   font-family: "sneakers-pro", sans-serif;
@@ -140,9 +141,10 @@ footer {
 
 .footer-item p {
   font-size: 0.8rem;
-  max-width: 150px;
+  max-width: 200px;
   line-height: 15px;
   text-align: center;
+  margin: auto;
 }
 
 .footer-item i {
@@ -160,6 +162,8 @@ footer {
 /*INDEX*/
 .content-container {
   margin: 0 0 0 80px;
+  display: flex;
+  flex-direction: column;
 }
 
 .index-text {
@@ -201,7 +205,6 @@ footer {
 
 .index-text p {
   margin: 0 auto 15px;
-  max-width: 250px;
   font-size: 0.8rem;
 }
 
@@ -210,6 +213,7 @@ a.h3 {
   font-weight: 400;
 }
 
+/*VISIT*/
 .visit-container {
   background-color: #d7e3e5;
   display: flex;
@@ -220,7 +224,7 @@ a.h3 {
 .visit-item h4,
 .visit-item a,
 .visit-item li {
-  max-width: 250px;
+  padding: 0 30px 20px;
 }
 
 .visit-item a {
@@ -230,43 +234,30 @@ a.h3 {
 }
 .visit-item {
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .visit-item img {
   margin: 0 auto;
 }
 
-/*VISIT*/
 .visit-item #map {
   margin: auto;
   width: 240px;
   height: 240px;
 }
 
-.visit-item p {
-  text-align: center;
-  max-width: 240px;
-  margin: 0 0 40px;
-}
-
 .opening-hours p {
   line-height: 20px;
-  margin: 0;
+  margin: 0 auto;
 }
 
-.visit-item h2 {
-  margin: 30px auto 10px;
+.center {
+  text-align: center;
 }
 
 /*EXPLORE*/
-.for_kids p,
-.for_teachers p,
-.for_researchers p {
-  max-width: 240px;
-  margin: 5px auto;
-  overflow: visible;
-}
-
 .for_kids h1 {
   margin: -4px auto 0;
   padding: 25px;
@@ -292,16 +283,11 @@ a.h3 {
 
 .for_teachers {
   background-color: #8dafb5;
-  padding-bottom: 40px;
+  flex-direction: column;
 }
 
 .for_researchers {
   background-color: #eaeced;
-  padding-bottom: 40px;
-}
-
-#explore_img {
-  max-height: 200px;
 }
 
 .forkids_text,
@@ -309,15 +295,16 @@ a.h3 {
   flex: 1 1 auto;
 }
 
-.forkids_img img {
-  max-width: 240px;
-  margin: auto;
+.forkids_img img,
+.forteachers_img img,
+.forresearchers_img img {
+  max-width: 100%;
 }
 
-.forkids_text p,
-.forkids_text h2 {
-  max-width: 240px;
-  margin: auto;
+.forkids_img,
+.forresearchers_img {
+  display: flex;
+  flex-direction: column;
 }
 
 /*EXHIBITIONS and EVENTS*/
@@ -342,8 +329,6 @@ a.h3 {
 
 .exhibition-container p {
   font-size: 0.8rem;
-  max-width: 240px;
-  margin: 10px auto 40px;
 }
 
 .exhibition-item p {
@@ -509,8 +494,7 @@ a.h3 {
 .internships p,
 .volunteer p,
 .get_involved p {
-  max-width: 240px;
-  margin: auto auto 40px;
+  padding: 0 30px 20px;
   font-size: 0.8rem;
 }
 
@@ -584,26 +568,22 @@ a.h3 {
 
   .nav {
     width: 110px;
+    position: fixed;
+  }
+
+  /*VISIT*/
+  .visit-item #map {
+    width: 400px;
+    height: 400px;
   }
 
   /*EXPLORE */
-  .for_kids {
+  .for_kids,
+  .for_teachers {
     flex-flow: row-reverse;
   }
 
-  .for_researchers,
-  .for_teachers {
+  .for_researchers {
     flex-direction: row;
-  }
-
-  .forkids_img img {
-    max-width: 400px;
-    margin: auto;
-  }
-
-  .forkids_text p,
-  .forkids_text h2 {
-    max-width: 400px;
-    margin: auto;
   }
 } /*MEDIA QUERY CLOSING*/
