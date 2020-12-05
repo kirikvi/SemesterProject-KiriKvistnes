@@ -248,6 +248,11 @@ a.h3 {
   height: 240px;
 }
 
+#row {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .opening-hours p {
   line-height: 20px;
   margin: 0 auto;
@@ -401,7 +406,6 @@ a.h3 {
 }
 
 .gallery {
-  padding: 0 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -427,7 +431,7 @@ a.h3 {
 
 /*EVOLUTION*/
 #evolution {
-  background-color: #f5c15b;
+  background-color: #d7e3e5;
   padding: 20px 0;
 }
 
@@ -599,9 +603,15 @@ a.h3 {
   }
 
   /*VISIT*/
-  .visit-item #map {
-    width: 400px;
-    height: 400px;
+
+  #row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .visit-flex {
+    flex: 1 0 auto;
   }
 
   /*EXPLORE */
@@ -643,6 +653,8 @@ a.h3 {
     background-repeat: no-repeat;
     padding: 0;
   }
+
+  /*EVOLUTION*/
 
   h1 {
     font-size: 3.5rem;
