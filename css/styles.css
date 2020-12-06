@@ -111,7 +111,10 @@ a:hover {
 h4,
 p,
 .exhibition-item a,
-.special-item a {
+.special-item a,
+.night-list li,
+.block-form label,
+.night-form label {
   font-family: "omnes-pro", sans-serif;
   font-weight: 100;
 }
@@ -169,9 +172,14 @@ footer {
 .index-text {
   background-color: #010102;
   text-align: center;
-  color: #eaeced;
-  overflow: hidden;
-  height: 250px;
+}
+
+#index-hours {
+  padding-bottom: 40px;
+}
+
+#index-hours h2 {
+  padding-top: 40px;
 }
 
 .index-pic h1,
@@ -182,7 +190,8 @@ footer {
 .special-item p,
 .special-item h3,
 .special-container h2,
-.exhibition-container h2 {
+.exhibition-container h2,
+#index-hours h2 {
   color: #eaeced;
 }
 
@@ -454,6 +463,24 @@ a.h3 {
   padding-top: 40px;
 }
 
+/*ECOLOGY*/
+.ecology-content {
+  background-color: #d7e3e5;
+}
+
+.ecology-content img {
+  max-width: 100%;
+}
+
+/*BIOLOGY AND MEDICINE*/
+.biology-content {
+  background-color: #d7e3e5;
+}
+
+.biology-content img {
+  max-width: 100%;
+}
+
 /*A FUTURE IN SPACE*/
 
 /*NIGHT IN THE MUSEUM*/
@@ -462,17 +489,41 @@ a.h3 {
   padding-bottom: 40px;
 }
 
+.night_back img {
+  min-width: 100%;
+}
+
+.night-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.night-flex div {
+  flex: 1 0 auto;
+}
+
 .night_back p,
 .night_back h1 {
-  max-width: 240px;
   margin: auto;
 }
 
 .night-form {
-  max-width: 250px;
-  background-color: #f5c15b;
-  padding: 20px;
-  margin: 25px auto 0;
+  background-color: #8dafb5;
+  padding: 10px 10px 40px;
+  margin: 25px auto;
+  max-width: 800px;
+}
+
+.night-form label {
+  font-weight: 500;
+}
+
+.night-form textarea {
+  min-width: 100%;
+}
+
+.form-back {
+  padding: 7px;
 }
 
 .block-form {
@@ -493,19 +544,19 @@ a.h3 {
 .send {
   text-align: center;
   background-color: #eaeced;
-  width: 70px;
-  font-weight: 500;
+  font-weight: 700;
+  border-radius: 5px;
 }
 
 .send:hover {
   background-color: #010102;
-  color: #f5c15b;
+  color: #d7e3e5;
 }
 
 #email,
 #phone,
 #name {
-  width: 200px;
+  min-width: 100%;
 }
 
 /*GET INVOLVED*/
