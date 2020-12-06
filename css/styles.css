@@ -317,7 +317,9 @@ a.h3 {
 .exhibition-container p,
 .exhibition-item a,
 .special-item a,
-.special-container h1 {
+.special-container h1,
+.robotic-content p,
+.robotic-content h1 {
   color: #eaeced;
   text-decoration: none;
 }
@@ -441,6 +443,15 @@ a.h3 {
 
 #evolution h1 {
   font-family: "salvation", Impact, "Arial Narrow Bold", sans-serif;
+}
+
+/*ROBOTICS AND AI*/
+#robotic-content {
+  background-color: #010102;
+}
+
+.robotic-content h1 {
+  padding-top: 40px;
 }
 
 /*A FUTURE IN SPACE*/
