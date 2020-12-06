@@ -280,7 +280,6 @@ a.h3 {
 
 .for_kids {
   background-color: #d7e3e5;
-  padding-bottom: 25px;
 }
 
 .for_kids,
@@ -291,13 +290,58 @@ a.h3 {
 }
 
 .send_info {
-  margin: auto;
-  padding: 40px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #8dafb5;
+}
+
+.send_info p {
+  font-size: 1rem;
+  max-width: 300px;
+  padding: 0;
+  text-align: center;
+}
+
+.holiday-club {
+  padding: 10px;
+  text-align: center;
+}
+
+#holiday-mail,
+#holiday-send {
+  width: 100%;
+  height: 50px;
+  padding: 2px;
+}
+
+#holiday-mail {
+  background-color: #eaeced;
+  border: 1px solid #d7e3e5;
+}
+
+#holiday-send {
+  background-color: #d7e3e5;
+  border: none;
+  box-shadow: -2px 6px 6px rgba(0, 0, 0, 0.2), 2px 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#holiday-send:hover {
+  background-color: #010102;
+  color: #8dafb5;
 }
 
 .for_teachers {
   background-color: #8dafb5;
   flex-direction: column;
+}
+
+.forteachers_text {
+  padding-top: 40px;
+}
+
+.arrange p {
+  font-weight: 650;
+  text-align: center;
 }
 
 .for_researchers {
@@ -309,10 +353,24 @@ a.h3 {
   flex: 1 1 auto;
 }
 
+.forresearchers_text {
+  padding: 25px;
+}
+
 .forkids_img img,
 .forteachers_img img,
 .forresearchers_img img {
   max-width: 100%;
+}
+
+.forteachers_img img,
+.forresearchers_img img {
+  height: 100%;
+}
+
+#skeleton {
+  max-height: 400px;
+  object-fit: contain;
 }
 
 .forkids_img,
@@ -482,7 +540,21 @@ a.h3 {
 }
 
 /*A FUTURE IN SPACE*/
+.afuture {
+  background-color: #eaeced;
+}
 
+#afuture {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#afuture div {
+  flex: 1 0 15rem;
+}
+#afuture img {
+  max-width: 100%;
+}
 /*NIGHT IN THE MUSEUM*/
 .night_back {
   background-color: #eaeced;
@@ -557,6 +629,11 @@ a.h3 {
 #phone,
 #name {
   min-width: 100%;
+}
+
+/*ENERGETICA*/
+.energetica {
+  background-color: #eaeced;
 }
 
 /*GET INVOLVED*/
