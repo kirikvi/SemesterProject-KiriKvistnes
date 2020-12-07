@@ -167,8 +167,9 @@ footer {
 }
 
 #index-pic {
-  background-image: url("../images/top-index.jpg");
-  background-position: 50%;
+  background-image: url("../images/joshua-earle-C6duwascOEA-unsplash.jpg");
+  background-position: 50% 95%;
+  height: 300;
 }
 
 #evo-header {
@@ -178,7 +179,7 @@ footer {
   background-attachment: fixed;
 }
 
-.header-p {
+.header-h1 {
   font-family: "sneakers-pro", Impact, "Arial Narrow Bold", sans-serif;
   color: #eaeced;
   font-size: 2rem;
@@ -413,7 +414,7 @@ a.h3 {
 
 /*EXHIBITIONS and EVENTS*/
 #evolution p,
-#evolution h1,
+#evolution h2,
 .exhibition-container h1,
 .exhibition-container p,
 .exhibition-item a,
@@ -750,6 +751,12 @@ a.h3 {
     min-width: 400px;
     height: 450px;
     padding: 10px;
+  }
+
+  #index-pic h1 {
+    font-size: 3.5rem;
+    top: 190px;
+    -webkit-text-stroke: 0.5px #010102;
   }
 }
 
