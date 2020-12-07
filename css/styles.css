@@ -175,14 +175,65 @@ footer {
 #evo-header {
   background-image: url("../images/vino-li-ntmWRTlRnR4-unsplash.jpg");
   background-position: 50%;
+}
+
+#cos-header {
+  background-image: url("../images/guillermo-ferla-kEEl9csCutg-unsplash.jpg");
+  background-position: 50% 90%;
+}
+
+#rob-header {
+  background-image: url("../images/maximalfocus-naSAHDWRNbQ-unsplash.jpg");
+  background-position: 65%;
+}
+
+#eco-header {
+  background-image: url("../images/annie-spratt-o1bnhassePU-unsplash.jpg");
+  background-position: 60%;
+}
+
+#bio-header {
+  background-image: url("../images/national-cancer-institute-L7en7Lb-Ovc-unsplash.jpg");
+  background-position: center;
+}
+
+#night-header {
+  background-image: url("../images/roberto-nickson-btjqFXX97l0-unsplash.jpg");
+  background-position: bottom left;
+}
+
+#cos-header,
+#evo-header,
+#rob-header,
+#eco-header,
+#bio-header,
+#night-header {
   height: 550px;
   background-attachment: fixed;
+}
+
+#eco-header {
+  height: 450px;
 }
 
 .header-h1 {
   font-family: "sneakers-pro", Impact, "Arial Narrow Bold", sans-serif;
   color: #eaeced;
   font-size: 2rem;
+}
+
+#cos-h1,
+#evo-h1,
+#rob-h1,
+#bio-h1,
+#night-h1 {
+  position: relative;
+  top: 65px;
+  text-align: left;
+}
+
+#bio-h1 {
+  top: 55px;
 }
 
 .header-content {
@@ -220,7 +271,9 @@ footer {
 .special-item h3,
 .special-container h2,
 .exhibition-container h2,
-#index-hours h2 {
+#index-hours h2,
+.biology-content h2,
+.biology-content p {
   color: #eaeced;
 }
 
@@ -421,7 +474,7 @@ a.h3 {
 .special-item a,
 .special-container h1,
 .robotic-content p,
-.robotic-content h1 {
+.robotic-content h2 {
   color: #eaeced;
   text-decoration: none;
 }
@@ -495,7 +548,7 @@ a.h3 {
 
 /*COSMOLOGY*/
 .cosmology-content p,
-.cosmology-content h1 {
+.cosmology-content h2 {
   color: #d7e3e5;
   margin: auto;
   padding: 5px 30px;
@@ -503,6 +556,7 @@ a.h3 {
 
 .cosmology-content {
   background-color: #010102;
+  padding-top: 50px;
 }
 
 #cosmology-img {
@@ -563,7 +617,7 @@ a.h3 {
 
 /*BIOLOGY AND MEDICINE*/
 .biology-content {
-  background-color: #d7e3e5;
+  background-color: #010102;
 }
 
 .biology-content img {
@@ -588,14 +642,8 @@ a.h3 {
 }
 /*NIGHT IN THE MUSEUM*/
 .night_back {
-  background-color: #eaeced;
+  background-color: #010102;
   padding-bottom: 40px;
-}
-
-.night_back img {
-  min-width: 100%;
-  max-height: 300px;
-  object-fit: contain;
 }
 
 .night-flex {
@@ -608,8 +656,13 @@ a.h3 {
 }
 
 .night_back p,
-.night_back h1 {
+.night_back h2 {
   margin: auto;
+  color: #eaeced;
+}
+
+.night_back h2 {
+  padding-top: 50px;
 }
 
 .night-form {
@@ -761,6 +814,13 @@ a.h3 {
 }
 
 @media screen and (min-width: 1024px) {
+  #cos-h1,
+  #evo-h1,
+  #rob-h1 {
+    font-size: 3.5rem;
+    top: 50px;
+    -webkit-text-stroke: 0.5px #010102;
+  }
   .exhibition-item,
   .special-item {
     display: flex;
