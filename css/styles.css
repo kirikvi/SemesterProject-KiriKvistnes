@@ -31,18 +31,9 @@ nav img {
   margin-top: 20px;
 }
 
-.index-pic {
-  background-image: url("../images/top-index.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 100%;
-  min-height: 260px;
-  background-position: 50%;
-}
-
 .nav {
   background-color: #010102;
-  width: 80px;
+  width: 70px;
   min-height: 100%;
   margin: 0;
   position: fixed;
@@ -85,6 +76,10 @@ h3 {
   text-align: center;
 }
 
+p {
+  font-size: 0.9rem;
+}
+
 h1,
 h2,
 h3,
@@ -114,7 +109,8 @@ p,
 .special-item a,
 .night-list li,
 .block-form label,
-.night-form label {
+.night-form label,
+.box-p {
   font-family: "omnes-pro", sans-serif;
   font-weight: 100;
 }
@@ -129,7 +125,7 @@ hr {
 
 footer {
   background-color: #8dafb5;
-  margin-left: 80px;
+  margin-left: 70px;
 }
 
 .footer-container {
@@ -162,9 +158,41 @@ footer {
   margin: 30px auto 0;
 }
 
+/*HEADER IMAGES AND TEXT*/
+.header-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 260px;
+}
+
+#index-pic {
+  background-image: url("../images/top-index.jpg");
+  background-position: 50%;
+}
+
+#evo-header {
+  background-image: url("../images/vino-li-ntmWRTlRnR4-unsplash.jpg");
+  background-position: 50%;
+  height: 550px;
+  background-attachment: fixed;
+}
+
+.header-p {
+  font-family: "sneakers-pro", Impact, "Arial Narrow Bold", sans-serif;
+  color: #eaeced;
+  font-size: 2rem;
+}
+
+.header-content {
+  margin: auto;
+  position: relative;
+  top: 300px;
+}
+
 /*INDEX*/
 .content-container {
-  margin: 0 0 0 80px;
+  margin-left: 70px;
   display: flex;
   flex-direction: column;
 }
@@ -182,7 +210,7 @@ footer {
   padding-top: 40px;
 }
 
-.index-pic h1,
+#index-pic h1,
 .index-text p,
 .index-text a,
 .exhibition-item p,
@@ -195,7 +223,7 @@ footer {
   color: #eaeced;
 }
 
-.index-pic h1 {
+#index-pic h1 {
   font-size: 3rem;
   margin: 0 auto 5px;
   position: relative;
@@ -214,7 +242,7 @@ footer {
 
 .index-text p {
   margin: 0 auto 15px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 a.h3 {
@@ -257,6 +285,11 @@ a.h3 {
   height: 240px;
 }
 
+.visit-flex {
+  display: flex;
+  flex-direction: column;
+}
+
 #row {
   display: flex;
   flex-direction: column-reverse;
@@ -297,7 +330,6 @@ a.h3 {
 
 .send_info p {
   font-size: 1rem;
-  max-width: 300px;
   padding: 0;
   text-align: center;
 }
@@ -354,7 +386,7 @@ a.h3 {
 }
 
 .forresearchers_text {
-  padding: 25px;
+  padding: 25px 0;
 }
 
 .forkids_img img,
@@ -380,6 +412,8 @@ a.h3 {
 }
 
 /*EXHIBITIONS and EVENTS*/
+#evolution p,
+#evolution h1,
 .exhibition-container h1,
 .exhibition-container p,
 .exhibition-item a,
@@ -402,7 +436,7 @@ a.h3 {
 }
 
 .exhibition-container p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .exhibition-item p {
@@ -500,16 +534,12 @@ a.h3 {
 
 /*EVOLUTION*/
 #evolution {
-  background-color: #d7e3e5;
+  background-color: #010102;
   padding: 20px 0;
 }
 
 #evolution p {
   margin: auto;
-}
-
-#evolution h1 {
-  font-family: "salvation", Impact, "Arial Narrow Bold", sans-serif;
 }
 
 /*ROBOTICS AND AI*/
@@ -586,6 +616,7 @@ a.h3 {
   padding: 10px 10px 40px;
   margin: 25px auto;
   max-width: 800px;
+  box-shadow: -2px 6px 6px rgba(0, 0, 0, 0.2), 2px 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .night-form label {
@@ -620,6 +651,7 @@ a.h3 {
   background-color: #eaeced;
   font-weight: 700;
   border-radius: 5px;
+  box-shadow: -2px 6px 6px rgba(0, 0, 0, 0.2), 2px 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .send:hover {
@@ -651,15 +683,45 @@ a.h3 {
   background-color: #d7e3e5;
 }
 
-#donate {
-  background-color: #d7e3e5;
-  border: 1px solid #010102;
+.clicktodonate {
   text-align: center;
+  text-decoration: underline;
+  font-family: "bc-sklonar", sans-serif;
+}
+.clicktodonate:hover {
+  font-weight: 600;
+}
+
+#donate,
+.donation-box {
+  display: none;
+}
+
+#donate:checked ~ .donation-box {
+  display: block;
+}
+
+.donation-box {
+  background-color: #d7e3e5;
+  max-width: 70%;
+  height: px;
   margin: auto;
-  padding: 5px;
-  text-transform: uppercase;
-  border-radius: 10px;
-  font-size: 1.1rem;
+  text-align: center;
+  padding: 20px;
+  box-shadow: -2px 6px 6px rgba(0, 0, 0, 0.2), 2px 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.donation-box a {
+  display: block;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #eaeced;
+  box-shadow: -2px 6px 6px rgba(0, 0, 0, 0.2), 2px 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.box-p {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .get_involved div,
@@ -672,7 +734,7 @@ a.h3 {
 .internships p,
 .volunteer p,
 .get_involved p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .internships,
