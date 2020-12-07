@@ -202,12 +202,24 @@ footer {
   background-position: bottom left;
 }
 
+#energetica-header {
+  background-image: url("../images/energetica-pic.jpg");
+  background-position: 10% 100%;
+}
+
+#fut-header {
+  background-image: url("../images/arseny-togulev-aYt5sG3epnQ-unsplash.jpg");
+  background-position: center;
+}
+
 #cos-header,
 #evo-header,
 #rob-header,
 #eco-header,
 #bio-header,
-#night-header {
+#night-header,
+#energetica-header,
+#fut-header {
   height: 550px;
   background-attachment: fixed;
 }
@@ -585,6 +597,11 @@ a.h3 {
 
 .gallery-img:hover {
   transform: scale(1.15);
+}
+
+.gallery-item {
+  position: relative;
+  width: 50%;
 }
 
 /*EVOLUTION*/
