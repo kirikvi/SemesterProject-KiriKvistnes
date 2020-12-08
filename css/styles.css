@@ -257,7 +257,8 @@ footer {
 #evo-h1,
 #rob-h1,
 #bio-h1,
-#night-h1 {
+#night-h1,
+#fut-h1 {
   position: relative;
   top: 65px;
   text-align: left;
@@ -265,6 +266,12 @@ footer {
 
 #bio-h1 {
   top: 55px;
+}
+
+#fut-h1 {
+  color: #010102;
+  top: 70px;
+  font-size: 2.2rem;
 }
 
 .header-content {
@@ -705,6 +712,10 @@ a.h3 {
   box-shadow: -2px 6px 6px rgba(0, 0, 0, 0.2), 2px 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+.night-form h2 {
+  color: #010102;
+}
+
 .night-form label {
   font-weight: 500;
 }
@@ -740,8 +751,16 @@ a.h3 {
   box-shadow: -2px 6px 6px rgba(0, 0, 0, 0.2), 2px 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+.send a {
+  color: #010102;
+  text-decoration: none;
+}
+
 .send:hover {
   background-color: #010102;
+}
+
+.send a:hover {
   color: #d7e3e5;
 }
 
@@ -757,6 +776,10 @@ a.h3 {
 }
 
 /*GET INVOLVED*/
+.contact-info {
+  margin: 0;
+}
+
 .get_involved {
   background-color: #8dafb5;
 }
@@ -790,19 +813,37 @@ a.h3 {
 .donation-box {
   background-color: #d7e3e5;
   max-width: 70%;
-  height: px;
-  margin: auto;
+  margin: 10px auto;
   text-align: center;
   padding: 20px;
+  border-radius: 2px;
   box-shadow: -2px 6px 6px rgba(0, 0, 0, 0.2), 2px 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .donation-box a {
+  color: #010102;
+  text-decoration: none;
   display: block;
   padding: 10px;
   margin-top: 15px;
   background-color: #eaeced;
+  border-radius: 2px;
   box-shadow: -2px 6px 6px rgba(0, 0, 0, 0.2), 2px 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.donation-page {
+  background-color: #eaeced;
+}
+
+.donation-page p {
+  text-align: center;
+}
+
+.return {
+  color: #010102;
+  text-align: center;
+  margin: auto;
+  padding: 15px 15px 30px;
 }
 
 .box-p {
