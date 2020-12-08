@@ -100,6 +100,7 @@ p {
 h1 {
   font-family: "sneakers-pro", sans-serif;
   font-weight: 500;
+  margin-bottom: 0;
 }
 h2,
 h3,
@@ -130,6 +131,7 @@ h4 {
 
 hr {
   width: 130px;
+  border: 1.2px solid #8dafb5;
 }
 
 footer {
@@ -519,7 +521,6 @@ a.h3 {
 }
 
 .special-container h1 {
-  font-size: 2rem;
   text-align: center;
 }
 
