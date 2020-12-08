@@ -151,7 +151,7 @@ footer {
 
 .footer-item p {
   font-size: 0.8rem;
-  max-width: 200px;
+  max-width: 210px;
   line-height: 15px;
   text-align: center;
   margin: auto;
@@ -210,7 +210,7 @@ footer {
 
 #night-header {
   background-image: url("../images/roberto-nickson-btjqFXX97l0-unsplash.jpg");
-  background-position: bottom left;
+  background-position: 30% 50%;
 }
 
 #energetica-header {
@@ -230,7 +230,7 @@ footer {
 
 #expl-header {
   background-image: url("../images/simon-infanger-J05sVmuxeEg-unsplash.jpg");
-  background-position: bottom right;
+  background-position: 50% 80%;
 }
 
 #cos-header,
@@ -245,7 +245,8 @@ footer {
   background-attachment: fixed;
 }
 
-#eco-header {
+#eco-header,
+#night-header {
   height: 450px;
 }
 
@@ -259,8 +260,8 @@ footer {
 #evo-h1,
 #rob-h1,
 #bio-h1,
-#night-h1,
-#fut-h1 {
+#fut-h1,
+#energetica-h1 {
   position: relative;
   top: 65px;
   text-align: left;
@@ -303,6 +304,7 @@ footer {
 }
 
 #index-pic h1,
+.night_back h1,
 .index-text p,
 .index-text a,
 .exhibition-item p,
@@ -407,6 +409,13 @@ a.h3 {
 
 .for_kids {
   background-color: #d7e3e5;
+}
+
+.sub-header {
+  font-family: "omnes", sans-serif;
+  text-align: left;
+  font-weight: 550;
+  margin-bottom: 5px;
 }
 
 .for_kids,
@@ -612,6 +621,7 @@ a.h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 50px 0 50px;
 }
 
 .gallery-item {
