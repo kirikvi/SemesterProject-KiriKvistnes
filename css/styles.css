@@ -13,7 +13,6 @@ html {
 
 .img {
   min-width: 100%;
-  height: auto;
 }
 
 *,
@@ -479,6 +478,7 @@ a.h3 {
 .forteachers_img img,
 .forresearchers_img img {
   max-width: 100%;
+  height: auto;
 }
 
 .forteachers_img img,
@@ -832,6 +832,10 @@ a.h3 {
 .volunteer,
 .get_involved {
   overflow: hidden;
+}
+
+.intern-img {
+  height: auto;
 }
 
 /*FOR TABLETS */
