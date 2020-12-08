@@ -477,6 +477,7 @@ a.h3 {
 .forkids_img img,
 .forteachers_img img,
 .forresearchers_img img {
+  display: flex;
   max-width: 100%;
   height: auto;
 }
