@@ -47,6 +47,15 @@ nav img {
   font-size: 2rem;
 }
 
+.nav div:hover {
+  color: #d7e3e5;
+}
+
+#current-text,
+#current {
+  color: #d7e3e5;
+}
+
 #logo {
   width: 70px;
   height: 70px;
@@ -210,6 +219,16 @@ footer {
 #fut-header {
   background-image: url("../images/arseny-togulev-aYt5sG3epnQ-unsplash.jpg");
   background-position: center;
+}
+
+#inv-header {
+  background-image: url("../images/visit-pic.jpg");
+  background-position: center;
+}
+
+#expl-header {
+  background-image: url("../images/simon-infanger-J05sVmuxeEg-unsplash.jpg");
+  background-position: right;
 }
 
 #cos-header,
@@ -823,6 +842,17 @@ a.h3 {
     padding: 10px;
   }
 
+  .exhibition-item img,
+  .special-item img,
+  .left img {
+    max-width: 380px;
+    overflow: hidden;
+    margin: auto;
+    min-height: 200px;
+    padding: 5px;
+    object-fit: contain;
+  }
+
   #index-pic h1 {
     font-size: 3.5rem;
     top: 190px;
@@ -838,6 +868,7 @@ a.h3 {
     top: 50px;
     -webkit-text-stroke: 0.5px #010102;
   }
+
   .exhibition-item,
   .special-item {
     display: flex;
@@ -853,7 +884,7 @@ a.h3 {
     overflow: hidden;
     margin: auto;
     min-height: 360px;
-    padding: 10px;
+    padding: 5px;
   }
 
   .right {
