@@ -482,11 +482,6 @@ a.h3 {
   height: auto;
 }
 
-.forteachers_img img,
-.forresearchers_img img {
-  height: 100%;
-}
-
 #skeleton {
   max-height: 400px;
   object-fit: contain;
