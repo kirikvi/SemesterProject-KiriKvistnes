@@ -993,6 +993,10 @@ a.h3 {
     flex-direction: row;
   }
 
+  .arrange {
+    padding-top: 100px;
+  }
+
   /*GET INVOLVED*/
   .contact-info {
     max-width: 400px;
