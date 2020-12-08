@@ -567,6 +567,12 @@ a.h3 {
   background-color: #f5c15b;
 }
 
+.specevent-p {
+  color: #eaeced;
+  padding: 30px;
+  text-align: center;
+}
+
 .exhibition-item img,
 .special-item img,
 .left img {
@@ -578,6 +584,10 @@ a.h3 {
 
 #afuture {
   margin-bottom: 50px;
+}
+
+#down {
+  margin-bottom: 100px;
 }
 
 /*COSMOLOGY*/
@@ -858,12 +868,6 @@ a.h3 {
   flex-direction: column;
 }
 
-.internships p,
-.volunteer p,
-.get_involved p {
-  font-size: 0.9rem;
-}
-
 .internships,
 .volunteer,
 .get_involved {
@@ -974,6 +978,11 @@ a.h3 {
     flex: 1 0 auto;
   }
 
+  p {
+    max-width: 850px;
+    margin: auto;
+  }
+
   /*EXPLORE */
   .for_kids,
   .for_teachers {
@@ -985,6 +994,11 @@ a.h3 {
   }
 
   /*GET INVOLVED*/
+  .contact-info {
+    max-width: 400px;
+    margin: auto;
+  }
+
   .internships {
     display: flex;
     flex-direction: row;
@@ -999,6 +1013,10 @@ a.h3 {
   #donate:hover {
     background-color: #f5c15b;
     font-weight: 800;
+  }
+
+  .clicktodonate {
+    padding: 20px;
   }
 
   /*COSMOLOGY*/
