@@ -132,6 +132,7 @@ h4 {
 hr {
   width: 130px;
   border: 1.2px solid #8dafb5;
+  margin-bottom: 30px;
 }
 
 footer {
@@ -603,7 +604,6 @@ a.h3 {
 
 .specevent-p {
   color: #eaeced;
-  padding: 30px;
   text-align: center;
 }
 
@@ -754,6 +754,7 @@ a.h3 {
   padding: 10px 10px 40px;
   margin: 25px auto;
   max-width: 800px;
+  border-radius: 5px;
   box-shadow: -2px 6px 6px rgba(0, 0, 0, 0.2), 2px 6px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -1081,7 +1082,12 @@ a.h3 {
     font-size: 3.5rem;
   }
 
-  p {
+  p,
+  .index-text p {
     font-size: 1.2rem;
+  }
+
+  .leftalign {
+    margin: 35px auto 0;
   }
 } /*MEDIA QUERY CLOSING*/
