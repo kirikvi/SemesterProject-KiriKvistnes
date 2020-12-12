@@ -97,7 +97,8 @@ p {
   color: #010102;
   padding: 0 30px;
 }
-h1 {
+h1,
+.h1 {
   font-family: "sneakers-pro", sans-serif;
   font-weight: 500;
   margin-bottom: 0;
@@ -921,6 +922,10 @@ a.h3 {
 
 /*FOR TABLETS */
 @media screen and (min-width: 600px) {
+  #rob-header {
+    background-position: 50% 40%;
+  }
+
   .exhibition-item,
   .special-item {
     min-width: 400px;
@@ -1078,7 +1083,8 @@ a.h3 {
 
   /*EVOLUTION*/
 
-  h1 {
+  h1,
+  .h1 {
     font-size: 3.5rem;
   }
 
