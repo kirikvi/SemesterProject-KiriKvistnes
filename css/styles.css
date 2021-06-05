@@ -122,7 +122,7 @@ nav img {
 nav {
   background-color: #010102;
   width: 70px;
-  height: 512px;
+  height: 100%;
   margin: 0;
   position: fixed;
   border-radius: 0 40px 30px 0;
