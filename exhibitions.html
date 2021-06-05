@@ -1,99 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Exhibitions - Community Science Museum</title>
-    <meta name="description" content="Viewing some of the exhibitions at Community Science Museum.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.typekit.net/cgq3pdm.css">
-    <script src="https://kit.fontawesome.com/3a7e09602a.js" crossorigin="anonymous"></script>
-    <link href="css/styles.css" rel="stylesheet">
+  <title>Exhibitions - Community Science Museum</title>
+  <meta name="description" content="Viewing some of the exhibitions at Community Science Museum.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.typekit.net/cgq3pdm.css">
+  <script src="https://kit.fontawesome.com/3a7e09602a.js" crossorigin="anonymous"></script>
+  <link href="css/styles.css" rel="stylesheet">
 </head>
-<body>
-  <nav>
-    <div class="nav">
-      <a href="index.html"><img src="images/newlogo.png" alt="logo for Community Science Museum" id="logo"></a>
-      <a href="visit.html"><i class="fas fa-door-open"></i></a>
-      <a class="menu-link" href="visit.html">Visit</a>
-      <a id="current" href="exhibitions.html"><i class="fas fa-brain"></i></a>
-      <a id="current-text" class="menu-link" href="exhibitions.html">Exhibitions</a>
-      <a href="events.html"><i class="fas fa-calendar-alt"></i></a>
-      <a class="menu-link" href="events.html">Events</a>
-      <a href="explore.html"><i class="fas fa-binoculars"></i></a>
-      <a class="menu-link" href="explore.html">Explore</a>
-      <a href="getinvolved.html"><i class="fas fa-hands-helping"></i></a>
-      <a class="menu-link" href="getinvolved.html">Get involved</a>
-      <a href="search.html"><i class="fas fa-search"></i></a>
-      <a class="menu-link" href="search.html">Search</a>
-    </div>
-  </nav> 
-  <main class="content-container">
-       <div class="exhibition-container"> 
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"><img src="images/newlogo.png" alt="logo for Community Science Museum" id="logo"></a>
+        </li>
+        <li> 
+          <a href="exhibitions.html" class="current"><i class="fas fa-brain"></i></a>
+          <a class="menu-link current" href="exhibitions.html">Exhibitions</a>
+        </li>  
+        <li>
+          <a href="events.html"><i class="fas fa-calendar-alt"></i></a>
+          <a class="menu-link" href="events.html">Events</a>
+        </li>
+        <li>
+          <a href="explore.html"><i class="fas fa-binoculars"></i></a>
+          <a class="menu-link" href="explore.html">Explore</a>
+        </li>
+        <li>
+          <a  href="getinvolved.html"><i class="fas fa-hands-helping"></i></a>
+          <a class="menu-link" href="getinvolved.html">Get involved</a>
+        </li>
+        <li>
+          <a href="search.html"><i class="fas fa-search"></i></a>
+          <a class="menu-link" href="search.html">Search</a>
+        </li> 
+      </ul>
+    </nav> 
+
+    <main>
+
+      <div class="exhibition-container"> 
         <h1>Exhibitions</h1>
         <hr>
-        <p id="down">We have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
+        <p>We have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
     
-        <div class="exhibition-item">
-          <div class="left">
-          <a href="cosmology.html"><img src="images/cosmology-pic.jpg" alt="a galaxy and a planet"></a>
-          </div>
-          <div class="right">
-          <h2><a href="cosmology.html" class="h3">Cosmology</a></h2>
-            <hr>
-            <p><a href="cosmology.html">Explore the wonders of our cosmos.</a></p>
-          </div>
+        <div class="loader">
+          <h2>Loading...</h2>
         </div>
+       
+        <!--CONTENT FROM WP--> 
+        <div class="exhibitions"></div>
+      </div>
 
-        <div class="exhibition-item"> 
-          <div class="left">
-          <a href="evolution.html"><img src="images/evolution-pic.jpg" alt="a dinosaur skeleton in a museum">
-          </div> 
-          <div class="right">
-          <h2><a href="evolution.html" class="h3">Evolution</a></h2>
-          <hr>
-          <p><a href="evolution.html">Discover the origins of life on this planet.</a></p>
-        </div>
-        </div>  
-    </div>
-    <div class="exhibition-container">
-        <div class="exhibition-item">
-          <div class="left">
-          <a href="roboticsandai.html"><img src="images/robotics-pic.jpg" alt="a kid wearing vr glasses"></a>
-        </div>
-        <div class="right">
-          <h2><a href="roboticsandai.html" class="h3">Robotics & AI</a></h2>
-          <hr>
-          <p><a href="roboticsandai.html">The Information Revolution is here.</a></p>
-        </div>
-        </div>
+    </main>
 
-        <div class="exhibition-item">
-          <div class="left">
-          <a href="ecology.html"><img src="images/ecology-pic.jpg" alt="a picture of pole ice from a birds perpective"></a>
-          </div>
-          <div class="right">
-            <h2><a href="ecology.html" class="h3">Ecology</a></h2>
-          <hr>
-          <p><a href="ecology.html">Explore how to create a sustainable future for the whole planet.</a></p>
-        </div> 
-      </div> 
-    </div> 
-    <div class="exhibition-container">
-        <div class="exhibition-item" id="down">
-          <div class="left">
-            <a href="biologyandmedicine.html"><img id="biology" src="images/biology-pic.jpg" alt="microorganisms up close"></a>
-          </div>
-          <div class="right">
-            <h2><a href="biologyandmedicine.html" class="h3">Biology & Medicine</a></h2>
-            <hr>
-            <p><a href="biologyandmedicine.html">Explore the history of medicine.</a></p>
-          </div>
-        </div>  
-    </div>
-    
-  </div>
-  </main>
-  <footer>
-    <div class="footer-container">
+    <footer>
       <div class="footer-item">
         <img src="images/newlogo.png" alt="logo for Community Science Museum">
       </div>
@@ -106,10 +67,11 @@
       
       <div class="footer-item">   
         <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
-      </div>
-    </div>      
-  </footer> 
-</body>    
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+      </div>    
+    </footer>
+
+    <script src="js/exhibitions.js"></script>
+  </body>    
 </html>

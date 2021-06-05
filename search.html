@@ -8,68 +8,72 @@
     <script src="https://kit.fontawesome.com/3a7e09602a.js" crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet">
 </head>
-<body>
+  <body>
     <nav>
-        <div class="nav">
-            <a href="index.html"><img src="images/newlogo.png" alt="logo for Community Science Museum" id="logo"></a>
-            <a href="visit.html"><i class="fas fa-door-open"></i></a>
-            <a class="menu-link" href="visit.html">Visit</a>
-            <a href="exhibitions.html"><i class="fas fa-brain"></i></a>
-            <a class="menu-link" href="exhibitions.html">Exhibitions</a>
-            <a href="events.html"><i class="fas fa-calendar-alt"></i></a>
-            <a class="menu-link" href="events.html">Events</a>
-            <a href="explore.html"><i class="fas fa-binoculars"></i></a>
-            <a class="menu-link" href="explore.html">Explore</a>
-            <a href="getinvolved.html"><i class="fas fa-hands-helping"></i></a>
-            <a class="menu-link" href="getinvolved.html">Get involved</a>
-            <a id="current" href="search.html"><i class="fas fa-search"></i></a>
-            <a id="current-text" class="menu-link" href="search.html">Search</a>
-        </div>
+      <ul>
+        <li>
+          <a href="index.html"><img src="images/newlogo.png" alt="logo for Community Science Museum" id="logo"></a>
+        </li>
+        <li> 
+          <a href="exhibitions.html"><i class="fas fa-brain"></i></a>
+          <a class="menu-link" href="exhibitions.html">Exhibitions</a>
+        </li>  
+        <li>
+          <a href="events.html"><i class="fas fa-calendar-alt"></i></a>
+          <a class="menu-link" href="events.html">Events</a>
+        </li>
+        <li>
+          <a href="explore.html"><i class="fas fa-binoculars"></i></a>
+          <a class="menu-link" href="explore.html">Explore</a>
+        </li>
+        <li>
+          <a  href="getinvolved.html"><i class="fas fa-hands-helping"></i></a>
+          <a class="menu-link" href="getinvolved.html">Get involved</a>
+        </li>
+        <li>
+          <a class="current" href="search.html"><i class="fas fa-search"></i></a>
+          <a class="menu-link current" href="search.html">Search</a>
+        </li> 
+      </ul>
     </nav> 
-  <main class="content-container">
-    <div class="header-image" id="inv-header">
-    </div>
+    <div class="header-image index-header"></div>
+    <main>
+      
         <div class="search-page">
-            <h1>Search the site</h1>
-            <hr>
+          <h1>Search the exhibitions and events</h1>
+          <hr>
 
-            <div class="search-bar">
-                <input type="text" id="search" placeholder="search">
-                <p class="search"><a href="index.html">Search</a></p>
-            </div>
+          <div class="search-bar">
+            <input type="text" id="search" class="search" placeholder="search">
+            <button id="search-button" class="search"><i class="fas fa-search"></i></button>
+          </div>
 
-            <div class="search-contact">
-                <h2>Can't find what you're looking for?</h2>
-                <p>We'd love to help you. Please contact us here:</p>
-                <p>Dronning Eufemias gate 16, 0191 Oslo</p>
-                <p>Reception: 123 45 678</p>
-                <p>Tours/Events: 876 54 321</p>
-                <p id="down">contact@comscimus.com</p>
-            </div>
-            
+          <div class="search-results"></div>
+
         </div>
-    </div>
+      </div>
     </main> 
+
     <footer>
-        <div class="footer-container">
-          <div class="footer-item">
-            <img src="images/newlogo.png" alt="logo for Community Science Museum">
-          </div>
-    
-          <div class="footer-item">
-            <p>Dronning Eufemias gate 16, 0191 Oslo</p>
-            <p>Reception: 123 45 678 Tours/Events: 876 54 321</p>
-            <p>contact@comscimus.com</p>
-          </div>
-          
-          <div class="footer-item">   
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
-          </div>
-        </div>      
-      </footer> 
-    </body>    
-    </html>
+      <div class="footer-item">
+        <img src="images/newlogo.png" alt="logo for Community Science Museum">
+      </div>
+
+      <div class="footer-item">
+        <p>Dronning Eufemias gate 16, 0191 Oslo</p>
+        <p>Reception: 123 45 678 Tours/Events: 876 54 321</p>
+        <p>contact@comscimus.com</p>
+      </div>
+      
+      <div class="footer-item">   
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+      </div>    
+    </footer>
+
+  <script src="js/search.js"></script>  
+  </body>    
+</html>
 
 

@@ -1,107 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Explore - Community Science Museum</title>
-    <meta name="description" content="Explore Community Science Museum. For kids, teachers and researchers.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.typekit.net/cgq3pdm.css">
-    <script src="https://kit.fontawesome.com/3a7e09602a.js" crossorigin="anonymous"></script>
-    <link href="css/styles.css" rel="stylesheet">
+  <title>Explore - Community Science Museum</title>
+  <meta name="description" content="Explore Community Science Museum. For kids, teachers and researchers.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.typekit.net/cgq3pdm.css">
+  <script src="https://kit.fontawesome.com/3a7e09602a.js" crossorigin="anonymous"></script>
+  <link href="css/styles.css" rel="stylesheet">
 </head>
-<body>
+  <body>
     <nav>
-        <div class="nav">
+      <ul>
+        <li>
           <a href="index.html"><img src="images/newlogo.png" alt="logo for Community Science Museum" id="logo"></a>
-          <a href="visit.html"><i class="fas fa-door-open"></i></a>
-          <a class="menu-link" href="visit.html">Visit</a>
+        </li>
+        <li> 
           <a href="exhibitions.html"><i class="fas fa-brain"></i></a>
           <a class="menu-link" href="exhibitions.html">Exhibitions</a>
+        </li>  
+        <li>
           <a href="events.html"><i class="fas fa-calendar-alt"></i></a>
           <a class="menu-link" href="events.html">Events</a>
-          <a id="current" href="explore.html"><i class="fas fa-binoculars"></i></a>
-          <a id="current-text" class="menu-link" href="explore.html">Explore</a>
-          <a href="getinvolved.html"><i class="fas fa-hands-helping"></i></a>
+        </li>
+        <li>
+          <a class="current" href="explore.html"><i class="fas fa-binoculars"></i></a>
+          <a class="menu-link current" href="explore.html">Explore</a>
+        </li>
+        <li>
+          <a  href="getinvolved.html"><i class="fas fa-hands-helping"></i></a>
           <a class="menu-link" href="getinvolved.html">Get involved</a>
+        </li>
+        <li>
           <a href="search.html"><i class="fas fa-search"></i></a>
           <a class="menu-link" href="search.html">Search</a>
-        </div>
-      </nav> 
-  <main class="content-container">
-    <div class="header-image" id="expl-header">
-    </div>
-    <div class="for_kids">
-        <div class="forkids_text">
-        <h1>Explore Together</h1>
-        <hr>
-        <h2>For kids</h2>
-        <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.</p>
-        <p>You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth?</p> 
-        <p>Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.</p>
-        
-        <h3 class="sub-header">Young Stars Club and Holiday Clubs</h3>
-        <p>We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.</p>
-        <p>During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery.</p> 
-        <p id="down">Each holiday we pick a new theme to explore. Submit your email address in the form below the mammoth, and we will email you information about the clubs and how you can join.</p>
-        </div>
-        <div class="forkids_img">
-        <img src="images/mammut.gif" alt="A mammoth skeleton" id="skeleton"> 
-        
-        <form class="send_info">
-            <p>Submit your email address to receive information about the Young Stars club and holiday club:</p>
-            <div class="holiday-club">
-                <input type="email" name="email" placeholder="your@email.address" id="holiday-mail">
-                <input type="submit" value="Submit" id="holiday-send">
-            </div>
-        </form>
-        </div>
-    </div>
-
-    <div class="for_teachers">
-        <div class="forteachers_img">
-            <img src="images/tristan-colangelo-WKFxRhgAKOI-unsplash.jpg" alt="a skeleton of a woolly mammoth and other animals in a museum exhibition">
-        </div>
-        <div class="forteachers_text">
-            <h2>For teachers</h2>   
-            <p>As a community-driven museum, we want to work with schools to create places of learning and exploring.</p> 
-            <p>Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.</p>
-            <p>Please get in touch with us via telephone or email to find out more about our facilities and to arrange a time to bring your students through for a visit.</p> 
-            <div class="arrange">
-                <p>Telephone: 876 54 321</p>
-                <p>Email: contact@comscimus.com</p>
-            </div>
-        </div>
-    </div> 
+        </li> 
+      </ul>
+    </nav> 
+    <div class="header-image explore-header"></div>
+    <main class="explore-main">
+      
+      <h1>Explore Together</h1>
+      <hr>
+      <h2>For kids</h2>
+      <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.</p>
+      <p>You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth?</p> 
+      <p>Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.</p>
+      
+      <h3>Young Stars Club and Holiday Clubs</h3>
+      <p>We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.</p>
+      <p>During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery.</p> 
+      <p>Each holiday we pick a new theme to explore. Submit your email address in the form below the mammoth, and we will email you information about the clubs and how you can join.</p>
     
-    <div class="for_researchers">
-        <div class="forresearchers_img">
-            <img src="images/ousa-chea-gKUC4TMhOiY-unsplash.jpg" alt="a desk with several microscopes">
-        </div>
-        <div class="forresearchers_text">
-            <h2>For researchers</h2>
-            <p>Are you looking to get involved with our team of researchers and academics?</p> 
-            <p>Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.</p>
-        </div>
-    </div>
+      <form class="send_info">
+        <p>Submit your email address to receive information about the Young Stars club and holiday club:</p>
+        <label for="holiday-mail">E-mail</label>
+        <input type="email" name="email" placeholder="your@email.address" id="holiday-mail">
+        <button class="holiday-send">Submit</button>
+      </form>
+     
+      <img src="images/tristan-colangelo-WKFxRhgAKOI-unsplash.jpg" alt="a skeleton of a woolly mammoth and other animals in a museum exhibition">
+    
+      <h2>For teachers</h2>   
+      <p>As a community-driven museum, we want to work with schools to create places of learning and exploring.</p> 
+      <p>Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.</p>
+      <p>Please get in touch with us via telephone or email to find out more about our facilities and to arrange a time to bring your students through for a visit.</p> 
+     
+      <div class="telandemail">
+          <p>Telephone: 876 54 321</p>
+          <p>Email: contact@comscimus.com</p>
+      </div>
+    
+      <h2>For researchers</h2>
+      <p>Are you looking to get involved with our team of researchers and academics?</p> 
+      <p>Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.</p>
+      <img src="images/ousa-chea-gKUC4TMhOiY-unsplash.jpg" alt="a desk with several microscopes">
     </main> 
 
     <footer>
-        <div class="footer-container">
-          <div class="footer-item">
-            <img src="images/newlogo.png" alt="logo for Community Science Museum">
-          </div>
-    
-          <div class="footer-item">
-            <p>Dronning Eufemias gate 16, 0191 Oslo</p>
-            <p>Reception: 123 45 678 Tours/Events: 876 54 321</p>
-            <p>contact@comscimus.com</p>
-          </div>
-          
-          <div class="footer-item">   
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
-          </div>
-        </div>      
-      </footer> 
-    </body>    
-    </html>
+      <div class="footer-item">
+        <img src="images/newlogo.png" alt="logo for Community Science Museum">
+      </div>
+
+      <div class="footer-item">
+        <p>Dronning Eufemias gate 16, 0191 Oslo</p>
+        <p>Reception: 123 45 678 Tours/Events: 876 54 321</p>
+        <p>contact@comscimus.com</p>
+      </div>
+      
+      <div class="footer-item">   
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+      </div>    
+    </footer> 
+  </body>    
+</html>
