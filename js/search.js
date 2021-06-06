@@ -7,7 +7,6 @@ async function fetchContent(){
     try{
         const search = await fetch(exhibitionsUrl);
         const results = await search.json();
-        console.log(results);
 
         function showResults(contentArray){
             container.innerHTML = "";
@@ -24,7 +23,6 @@ async function fetchContent(){
         showResults(results);
 
         function checkSearchValue(result){
-            console.log(searchBar.value);
             return result.name.includes(searchBar.value);
         }
 

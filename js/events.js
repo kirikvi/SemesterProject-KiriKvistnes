@@ -6,10 +6,8 @@ async function fetchEvents(){
     try{
         const search = await fetch(url);
         const eventsResults = await search.json();
-        console.log(eventsResults);
 
         for(let i = 0; i < eventsResults.length; i++ ){
-            console.log(eventsResults[i]);
             const category = eventsResults[i].categories[0].id;
 
             // If the category ID is not 20 (event category), continue.

@@ -8,7 +8,6 @@ async function fetchExhibits(){
         const exhibitResults = await search.json();
 
         for(let i = 0; i < exhibitResults.length; i++ ){
-            console.log(exhibitResults[i]);
             const category = exhibitResults[i].categories[0].id;
 
             

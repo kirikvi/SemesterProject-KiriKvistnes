@@ -4,7 +4,6 @@ const headerImage = document.querySelector(".header-image");
 const queryString = document.location.search;
 const parameters = new URLSearchParams(queryString);
 const id = parameters.get("id");
-console.log(id);
 
 const pageUrl = `https://comscimus.kvistnes.one/wp-json/wc/store/products/${id}`;
 
@@ -12,7 +11,6 @@ async function getContent(){
     try {
         const search = await fetch(pageUrl);
         const result = await search.json();
-        console.log(result);
 
         title.innerHTML = result.name;
 
