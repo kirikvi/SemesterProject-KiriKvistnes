@@ -26,7 +26,7 @@ a,
 
 p,
 .in-text-link {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .in-text-link {
@@ -546,7 +546,7 @@ footer {
 .contact-form {
   width: 80%;
   margin: auto;
-  padding: 30px;
+  padding: 10px;
   background-color: #d7e3e5;
   border-radius: 20px;
 }
@@ -557,7 +557,8 @@ footer {
 .contact-form h2,
 .message-form input,
 .message-form textarea,
-.message-form button {
+.message-form button,
+.night-form button {
     margin: 10px auto;
     display: block;
     width: 100%;
@@ -565,14 +566,15 @@ footer {
     border-radius: 20px;
 }
 
-.contact-form button{
+.contact-form button,
+.night-form button{
   height: 40px;
   margin: 20px auto 10px;
-  font-size: 1.5rem;
 }
 
 .contact-form button:hover,
-.message-form button:hover {
+.message-form button:hover,
+.night-form button:hover {
     background-color: #3A403B;
     color:#c8c7c2;
 }
@@ -586,33 +588,46 @@ footer {
 }
 
 .form-item input:focus,
-.form-item textarea:focus {
+.form-item textarea:focus,
+.night-form input:focus,
+.night-form textarea:focus {
 	outline: 0;
 	border-color: #3A403B;
 }
 
 .form-item.success input,
-.form-item.success textarea {
+.form-item.success textarea,
+.block-form.success input,
+.block-form.success textarea {
 	border-color: #2abb66;
 }
 
 .form-item.error input,
-.form-item.error textarea {
+.form-item.error textarea,
+.block-form.error input,
+.block-form.error textarea {
 	border-color: #e74c3c;
 }
 
 .form-item p,
-.form-item small {
+.form-item small,
+.block-form small {
     display: inline;
     font-size: .8rem;
 }
 
-.form-item small {
+.block-form label {
+  display: inline;
+}
+
+.form-item small,
+.block-form small {
 	color: #e74c3c;
 	visibility: hidden;
 }
 
-.form-item.error small {
+.form-item.error small,
+.block-form.error small {
 	visibility: visible;
 }
 
@@ -667,30 +682,37 @@ footer {
   margin: 10px auto;
   text-align: center;
   padding: 20px;
-  border-radius: 2px;
-  box-shadow: -2px 6px 6px rgba(0, 0, 0, 0.2), 2px 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 20px;
+  box-shadow: 16px 16px 6px rgba(0, 0, 0, 0.2), 2px 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .donation-box a {
   color: #010102;
   text-decoration: none;
+  text-align: center;
   display: block;
   padding: 10px;
   margin-top: 15px;
-  background-color: #eaeced;
-  border-radius: 2px;
-  box-shadow: -2px 6px 6px rgba(0, 0, 0, 0.2), 2px 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: #f5c15b;
+  border-radius: 20px;
 }
 
-.donation-page p {
+.donation-box a:hover {
+  background-color: #8dafb5;
+}
+
+.donation-page a,
+.donation-page p,
+.donation-page h2 {
   text-align: center;
 }
 
-.return {
+.donation-page a {
   color: #010102;
-  text-align: center;
+  display: block;
   margin: auto;
   padding: 15px 15px 30px;
+  text-decoration: underline;
 }
 
 .box-p {
@@ -786,6 +808,7 @@ button.search i {
   }
 }
 
+/*FOR MOBILE SCREENS*/
 @media screen and (min-width: 1024px) {
   /*Slide text*/
   .slide-text {
@@ -899,6 +922,10 @@ button.search i {
   .contact-info {
     max-width: 400px;
     margin: auto;
+  }
+
+  .contact-form {
+    padding: 30px;
   }
 
   .donate:hover {

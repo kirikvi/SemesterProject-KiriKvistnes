@@ -35,16 +35,21 @@ async function getContent(){
               <li class="night-list">For kids from the age of 6</li> 
               <li class="night-list">Bring your own sleeping bag</li>
             </ul>
-
-            <label class="block-form" for="name">Name</label>
-            <input class="block-form" type="text" id="name">
-            <label class="block-form" for="phone">Phone</label>
-            <input class="block-form" type="tel" id="phone">
-            <label class="block-form" for="email">E-mail</label>
-            <input class="block-form" type="email" id="email">
-            <label class="block-form" for="text">Who's coming along? How many kids (6-12y/o), youths (13-17y/o) and adults (18y/o and older).</label>
-            <textarea class="block-form" placeholder="Ex.. 2 kids, 1 youth and 2 adults" id="text" rows="4"></textarea>
-
+            <div class="block-form">
+              <label class="block-form" for="name">Name*</label>
+              <small>Error message</small>
+              <input class="block-form" type="text" id="name">
+            </div>
+            <div class="block-form">
+              <label class="block-form" for="email">E-mail*</label>
+              <small>Error message</small>
+              <input class="block-form" type="email" id="email">
+            </div>
+            <div class="block-form">
+              <label class="block-form" for="text">Who's coming along? How many kids (6-12y/o), youths (13-17y/o) and adults (18y/o and older).</label>
+              <small>Error message</small>
+              <textarea class="message" placeholder="Ex.. 2 kids, 1 youth and 2 adults" id="text" rows="4"></textarea>
+            </div>
             <div class="block-form">
               <input type="radio" name="date" id="04/01-05/01">
               <label for="04/01-05/01">04/01-05/01</label>
@@ -65,9 +70,7 @@ async function getContent(){
               <input type="radio" id="over18">
               <label for="over18">I am 18 years or older</label>
             </div>
-            <div class="send">
-                <a href="nightconfirmation.html">Sign up</a>
-            </div>
+            <button class="signup-night">Sign up</button>
           </form>`;
         } 
     }

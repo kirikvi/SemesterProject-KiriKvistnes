@@ -44,13 +44,17 @@
       <div class="form-back">
         <form class="night-form">
           <h2>Please fill out this form:</h2>
-  
-          <label class="block-form" for="name">Name*</label>
-          <input class="block-form" type="text" id="name">
-          <label class="block-form" for="phone">Phone*</label>
-          <input class="block-form" type="tel" id="phone">
-          <label class="block-form" for="email">E-mail*</label>
-          <input class="block-form" type="email" id="email">
+          <div class="block-form">
+            <label class="block-form" for="name">Name*</label>
+            <small>Error message</small>
+            <input class="block-form" type="text" id="name">
+          </div>
+          <div class="block-form">
+            <label class="block-form" for="email">E-mail*</label>
+            <small>Error message</small>
+            <input class="block-form" type="email" id="email">
+          </div>
+
           <label class="block-form" for="text">If you're donating items; please describe it here:</label>
           <textarea class="block-form" placeholder="Ex.. A toy robot in good condition from the late 90's." id="text" rows="4"></textarea>
           <label>Please select the amount you would like to donate:</label>  
@@ -74,9 +78,9 @@
             <label for="over18">Other amount</label>
             <input type="number" id="over18" min="0"><label>kr</label>
           </div>
-          <div class="send">
-            <a href="confirmation.html">Send request</a>
-          </div>
+          
+          <button class="submit-donation">Send request</button>
+          
         </form>
       </div>
     
@@ -99,5 +103,6 @@
         <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
       </div>    
     </footer>
+  <script src="js/donationform.js"></script>  
   </body>    
 </html>
