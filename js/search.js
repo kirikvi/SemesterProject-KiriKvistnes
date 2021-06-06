@@ -6,7 +6,8 @@ const searchButton = document.querySelector("#search-button");
 async function fetchContent(){
     try{
         const search = await fetch(exhibitionsUrl);
-        results = await search.json();
+        const results = await search.json();
+        console.log(results);
 
         function showResults(contentArray){
             container.innerHTML = "";
@@ -24,11 +25,11 @@ async function fetchContent(){
 
         function checkSearchValue(result){
             console.log(searchBar.value);
-            return result.name === searchBar.value || 
-            result.description === searchBar.value;
+            return result.name.includes(searchBar.value);
         }
 
         searchButton.onclick = function filterContent(){
+            container.style.display = "block";
             const newResults = results.filter(checkSearchValue);
             showResults(newResults);
         }
