@@ -20,11 +20,8 @@ async function fetchEvents(){
             container.innerHTML += `
             <a href="exhibit.html?id=${eventsResults[i].id}">
                 <div class="exhibition-item">
-                    <div class="exhibit-text">
-                        <img src="${eventsResults[i].images[0].thumbnail}" alt="${eventsResults[i].images[0].alt}">
-                    </div>
-
-                    <div class="right">
+                    <img src="${eventsResults[i].images[0].thumbnail}" alt="${eventsResults[i].images[0].alt}">
+                        <div class="exhibit-text">
                         <h2>${eventsResults[i].name}</h2>
                         <hr>
                         <p>${eventsResults[i].short_description}</p>

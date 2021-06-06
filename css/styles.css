@@ -26,7 +26,7 @@ a,
 
 p,
 .in-text-link {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .in-text-link {
@@ -308,7 +308,7 @@ footer {
   font-size: 2.6rem;
   margin: auto;
   font-weight: 700;
-  color:#f5c15b
+  color:#f5c15b;
 }
 
 @keyframes slide-left {
@@ -819,8 +819,7 @@ button.search i {
   }
 
   .category-item:hover {
-    background-color: #3b717a;
-    color: #d7e3e5;
+    background-color:#f5c15b;
   }
   
   .search-bar p:hover {
